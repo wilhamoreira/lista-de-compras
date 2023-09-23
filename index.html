@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            Minhas compras
+        </div>
+        <div class="valores">
+            <label for="receita">Carteira R$</label>
+            <input type="number" name="receita" id="receita">
+            <label for="montante-compra">Compra R$</label>
+            <input type="number" name="montante-compra" id="montante-compra" disabled>
+        </div>
+    </header>
+    <main>
+        <h2>Lista de compras</h2>
+        <section class="produtos">
+            <form class="lista-produtos" >
+                    <table id="lista">
+                        <tr class="cabecalho-produto">
+                            <thead>Produto</thead>
+                            <thead>Valor unitario</thead>
+                            <thead>Quantidade</thead>
+                            <thead>Sub-total</thead>
+                        </tr>
+                        <tr  class="produto">
+                            <td><input type="text" class="nome-produto"></td>
+                            <td><input type="number" name="valor-unidade"></td>
+                            <td><input type="number" name="quantidade"></td>
+                            <td><input type="number" name="sub-total"></td>
+                        </tr>                    
+                    </table>
+                
+                <button onclick="adicionaProduto()" id="adicionar-produto">+</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

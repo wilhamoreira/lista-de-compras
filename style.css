@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root{
+    --background-color : #A8DF8E;
+    --cabecalho : #F3FDE8;
+    --teste : #FFE5E5;
+    --teste2 : #FFBFBF;
+}
+
+body{
+    background: var(--background-color);
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    background-color: var(--cabecalho);
+    width: 80%;
+    height: 8vh;
+    display: flex;  
+    margin: auto;
+    align-items: center;
+    padding: 0 2rem;
+}
+header div{
+    width: 80%;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main h2{
+    margin: auto;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+main section.produtos{
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: var(--cabecalho);
+    margin: auto;
+    padding: 2rem;
+}
