@@ -19,8 +19,8 @@ body{
 
 header{
     background-color: var(--cabecalho);
+    min-width: 480px;
     width: 80%;
-    height: 8vh;
     display: flex;  
     margin: auto;
     align-items: center;
@@ -28,24 +28,59 @@ header{
 }
 header div{
     width: 80%;
-    
+    padding: 2em 0;
 }
 
 main{
-    display: flex;
-    flex-direction: column;
+    min-width: 480px;
 }
 
 main h2{
-    margin: auto;
+    display: flex;
+    justify-content: center;
     padding: 2rem 0;
     flex-wrap: wrap;
 }
 
 main section.produtos{
-    flex-wrap: wrap;
+    min-width: 480px;
     width: 80%;
     background-color: var(--cabecalho);
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
 }
+
+main section table {
+    min-width: 480px;
+    width: 100%;      
+}
+
+main section table thead {
+    
+    border: solid 1px red;
+}
+
+main section table thead th {  
+    border: solid 1px red; 
+
+}
+
+/* main section table .produto{
+    display: flex;
+    justify-content: center;
+    gap: 1em;  
+} */
+
+main section table tr.produto input{
+    margin-top: 1em;
+}
+
+/* main section table tr.produto input.nome-produto{
+    width: 25vw;
+}
+
+.valor-unitario,
+.quantidade,
+.sub-total {
+  flex: 1; 
+} */

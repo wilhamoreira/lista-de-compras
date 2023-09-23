@@ -21,24 +21,19 @@
     <main>
         <h2>Lista de compras</h2>
         <section class="produtos">
-            <form class="lista-produtos" >
-                    <table id="lista">
-                        <tr class="cabecalho-produto">
-                            <thead>Produto</thead>
-                            <thead>Valor unitario</thead>
-                            <thead>Quantidade</thead>
-                            <thead>Sub-total</thead>
-                        </tr>
-                        <tr  class="produto">
-                            <td><input type="text" class="nome-produto"></td>
-                            <td><input type="number" name="valor-unidade"></td>
-                            <td><input type="number" name="quantidade"></td>
-                            <td><input type="number" name="sub-total"></td>
-                        </tr>                    
+            
+                    <table class="lista">
+                            <thead>
+                                <th>Produto</th>
+                                <th>Valor unitario</th>
+                                <th>Quantidade</th>
+                                <th>Sub-total</th>
+                            </thead>  
+                        
+
                     </table>
                 
                 <button onclick="adicionaProduto()" id="adicionar-produto">+</button>
-            </form>
         </section>
     </main>
     <footer>
