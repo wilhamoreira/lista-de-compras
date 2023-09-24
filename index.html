@@ -7,35 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div>
-            Minhas compras
-        </div>
-        <div class="valores">
-            <label for="receita">Carteira R$</label>
-            <input type="number" name="receita" id="receita">
-            <label for="montante-compra">Compra R$</label>
-            <input type="number" name="montante-compra" id="montante-compra" disabled>
-        </div>
-    </header>
-    <main>
-        <h2>Lista de compras</h2>
-        <section class="produtos">
-            
+    <div class="conteudo">
+        <header>
+            <div>
+                Minhas compras
+            </div>
+            <div class="valores">
+                <label for="receita">Carteira R$</label>
+                <input type="number" name="receita" id="receita">
+                <label for="montante-compra">Compra R$</label>
+                <input type="number" name="montante-compra" id="montante-compra" disabled>
+            </div>
+        </header>
+        <main>
+            <h2>Lista de compras</h2>
+            <section class="produtos">
+                <div class="container">
                     <table class="lista">
-                            <thead>
-                                <th>Produto</th>
-                                <th>Valor unitario</th>
-                                <th>Quantidade</th>
-                                <th>Sub-total</th>
-                            </thead>  
-                        
+                        <thead>
+                            <th>Produto</th>
+                            <th>Valor unitario</th>
+                            <th>Quantidade</th>
+                            <th>Sub-total</th>
+                        </thead>
+                        <tbody class="corpo-tabela">
 
+                        </tbody>
+        
                     </table>
-                
-                <button onclick="adicionaProduto()" id="adicionar-produto">+</button>
-        </section>
-    </main>
+                </div>
+        
+                    <button onclick="adicionaProduto()" id="adicionar-produto">+</button>
+            </section>
+        </main>
+    </div>
     <footer>
 
     </footer>

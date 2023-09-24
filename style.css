@@ -13,26 +13,35 @@
 
 body{
     background: var(--background-color);
-    height: 100vh;
-    width: 100%;
+    width: 100vw;
+}
+
+div.conteudo{
+    width: 80%;
+    display: grid;
+    margin: auto; 
 }
 
 header{
     background-color: var(--cabecalho);
-    min-width: 480px;
-    width: 80%;
-    display: flex;  
+    width: 100%;    
+    display: grid;  
     margin: auto;
     align-items: center;
     padding: 0 2rem;
 }
 header div{
-    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
     padding: 2em 0;
 }
 
 main{
-    min-width: 480px;
+    width: 100%;
+    display: grid;
+    margin: auto;
+
 }
 
 main h2{
@@ -42,28 +51,42 @@ main h2{
     flex-wrap: wrap;
 }
 
+
 main section.produtos{
-    min-width: 480px;
-    width: 80%;
+    
+    width: 100%;
     background-color: var(--cabecalho);
     margin: auto;
-    padding: 1rem;
+    padding: .5rem;
+}
+
+main section.produtos div.container {
+    overflow: auto;
 }
 
 main section table {
-    min-width: 480px;
-    width: 100%;      
+    
+    width: 100%;
+    display: flex;      
+    flex-direction: column;
 }
 
-main section table thead {
-    
+main section table thead {    
     border: solid 1px red;
+    width: 100%;
+    
+}
+
+main section table thead tr{    
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 
 main section table thead th {  
     border: solid 1px red; 
-
 }
+
 
 /* main section table .produto{
     display: flex;
@@ -71,15 +94,33 @@ main section table thead th {
     gap: 1em;  
 } */
 
-main section table tr.produto input{
-    margin-top: 1em;
+main section table tbody{
+    width: 100%;
+    
+}
+
+main section table tbody tr {
+    display: flex;
+    width: 100%;
+}
+
+main section table tbody td {
+    display: flex;
+    width: 100%;
+    margin-top: .5rem;
+    gap: 1rem;
+}
+main section table tbody tr.produto  td input{
+    
+    width: 100%;
+    height: 24px;
 }
 
 /* main section table tr.produto input.nome-produto{
     width: 25vw;
 }
-
-.valor-unitario,
+*/
+/* .valor-unitario,
 .quantidade,
 .sub-total {
   flex: 1; 

@@ -1,7 +1,7 @@
 const adicao = document.querySelector('button#adicionar-produto')
 
 function adicionaProduto(){
-    let table = document.querySelector('.lista')
+    let table = document.querySelector('.corpo-tabela')
     //criando novo html
     const newHTML = `<tr class="produto">
     <td><input type="text"  name="nome-produto" class="nome-produto"></td>        
